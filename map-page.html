@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+
+<!-- Mirrored from demo.lion-coders.com/html/sarchholm-real-estate-template/home-v1.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jan 2021 15:12:24 GMT -->
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LionCoders" />
+    <!-- Links -->
+    <link rel="icon" type="image/png" href="#" />
+    <!-- google fonts-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link href="css/plugin.css" rel="stylesheet" />
+    <link href="vendors/animate.css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <!-- icon fonts -->
+    <link rel="stylesheet" type="text/css" href="vendors/icon_fonts/css/icon_set_1.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/icon_fonts/css/icon_set_2.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/icon_fonts/css/icon_set_3.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/icon_fonts/css/icon_set_4.css" />
+
+    <!-- style CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Document Title -->
+    <title>SwedKen | Travel solution next to you !</title>
+</head>
+
+<body>
+    <!-- paymetn mode modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="paymentMode" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Add a payment Mode</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="icon_close"></span>
+            </button>
+            </div>
+            <div class="modal-body pt-4">
+              <ul class="payment-mode-select">
+                  <li>
+                    <span class="btn v5 btn-mpesa">MPESA</span><strong class="font-bold text-black"> ...459</strong>
+                  </li>
+
+                  <li>
+                    <span class="btn v5">Visa</span><strong class="font-bold text-black"> ...123</strong>
+                  </li>
+
+                  <li>
+                    <span class="btn v5 btn-corporate">Corporate</span><strong class="font-bold text-black"> Nouveta</strong>
+                  </li>
+
+                  <li>
+                    <span class="btn v5 btn-blue">Cash</span><strong class="font-bold text-black"> pay with cash</strong>
+                  </li>
+                  <li>
+                      <i class="icon-list-add mr-5"></i>Add Payment mode
+                  </li>
+              </ul>
+            
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <!--Preloader starts-->
+    <div class="preloader js-preloader">
+        <img src="images/whiteTaxi.gif" alt="...">
+    </div>
+    <!--Preloader ends-->
+    <!--Page Wrapper starts-->
+    <div class="page-wrapper">
+        <!--header starts-->
+        <header class="header bg-black map-header-remove">
+            <!--Main Menu starts-->
+            <div class="site-navbar-wrap v1 bg-black">
+                <div class="container">
+                    <div class="site-navbar">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-md-6 col-9 order-2 order-xl-1 order-lg-1 order-md-1">
+                                <a class="navbar-brand" href="index.html"><img src="images/logo-white.png" alt="logo" class="img-fluid"></a>
+                            </div>
+                            <div class="col-lg-6 col-md-1 col-3  order-3 order-xl-2 order-lg-2 order-md-3 pl-xs-0">
+                                <nav class="site-navigation text-left">
+                                    <div class="container">
+                                        <ul class="site-menu">
+                                            <li class="">
+                                                <a href="#" class="text-nowrap">Ride Ordering</a>                                                
+                                            </li>                                           
+                                        </ul>
+                                    </div>
+                                </nav>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Main Menu ends-->
+        </header>
+        <!--Header ends-->
+
+        <!-- the map goes here -->
+        <div class="v2 section-padding main-map">
+            <div class="the-map w-100 h-100" id="map"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12 col-lg-5">
+                        <div class="card border-0">
+                            <div class="card-header">
+                                <form class="hero__form v2 filter listing-filter bg-cb bg-transparent p-0">
+                                    <div class="row">
+                                        <span class="close-addresser icon_close"></span>
+                                        <div class="col-12">
+                                            <div class="form-group mb-0">
+                                                <label class="font-12 text-black text-bold">Pickup Location</label>
+                                                <div class="input-map font-12">
+                                                    <input type="text"   id="pac-input" placeholder="Enter pickup Location">
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-12">
+                                            <div class="form-group mb-0">
+                                                <label class="font-12 text-black text-bold">Destination</label>
+                                                <div class="input-destination font-12">
+                                                    <input type="text" name="place-event" id="destination" placeholder="Enter pickup Location">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- the pickup coordinates -->
+                                        <div class="col-12 d-none">
+                                            <h5 id="originLat">123</h5>
+                                            <h5 id="originLng">123</h5>
+                                        </div>
+
+                                        <!-- the destination coordinates -->
+
+                                        <div class="col-12 d-none">
+                                            <h5 id="destinationLat">123</h5>
+                                            <h5 id="destinationLng">123</h5>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-body " >
+                                <div class="choosing-header">
+                                    <div>
+                                        <span class="ti-arrow-down"></span>
+                                        <span>Choose a package</span>
+                                    </div>
+                                </div>
+                               <div class="mapOptionsControls">
+                                <div class="map-selected-option">
+                                    <span class="lnr lnr-history mr-2"></span> Order Now <span class="lnr lnr-chevron-down ml-3"></span>  
+                                                                    
+                                </div>
+                                <span class="changeTheJourney">Change Journey</span>
+                               </div>
+                                <div class="ride-packages">
+                                    <div class="payment-options-container active">
+                                        <div class="package-icon-container">
+                                            <img src="images/packages/bike.png">
+                                        </div>
+                                        <div class="package-details">
+                                            <div class="price-package">
+                                                <h4>Sweet Boda <i class="icon_info_alt font-15 more-info-click" title="More info"></i></h4>
+                                                <h6 class="text-right m-0 p-0">KES 300</h6>
+                                            </div>
+                                            <div>
+                                                <span><span class=" icon-officers-3"></span> <span class="package-pass">1</span> | Arrival time: <strong class="package-timing">4 min</strong></span>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+
+                                    <div class="payment-options-container">
+                                        <div class="package-icon-container">
+                                            <img src="images/packages/cars-filter.cf7c3fd.png">
+                                        </div>
+                                        <div class="package-details">
+                                            <div class="price-package">
+                                                <h4>Comfort <i class="icon_info_alt font-15 more-info-click" title="More info"></i></h4>
+                                                <h6 class="text-right m-0 p-0">KES 520</h6>
+                                            </div>
+                                            <div>
+                                                <span><span class=" icon-officers-3"></span> <span class="package-pass">3</span> | Arrival time: <strong class="package-timing">30 min</strong></span>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+
+                                    <div class="payment-options-container">
+                                        <div class="package-icon-container">
+                                            <img src="images/packages/prestige.png">
+                                        </div>
+                                        <div class="package-details">
+                                            <div class="price-package">
+                                                <h4>Luxury <i class="icon_info_alt font-15 more-info-click" title="More info"></i></h4>
+                                                <h6 class="text-right m-0 p-0">KES 1,000</h6>
+                                            </div>
+                                            <div>
+                                                <span><span class=" icon-officers-3"></span> <span class="package-pass">2</span> | Arrival time: <strong class="package-timing">21 min</strong></span>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+
+                                <!-- ride preferences -->
+                                <div class="preferences">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group mb-0 mt-2">
+                                                <h6 class="text-black text-bold refinedSeacrToggle">Refined Preferences <span class=" icon-down-open"></span></h6>
+                                            </div>
+                                        </div>
+                                       <div class="col-12 ">
+                                           <div class="row the-preferences d-none animated fadeIn">
+                                                <div class="col-12">
+                                                    <div class="form-group mb-0 mt-2">
+                                                        <label class="font-12 text-black text-bold mt-0 pt-0">Child Safety Seat</label>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox col-12 mb-2">
+                                                        <input type="checkbox" id="car-seat-check">
+                                                        <label class="checkbox__label driver-checkbox" for="car-seat-check">Has a car seat</label>
+                                                </div>
+        
+                                                <div class="col-12">
+                                                    <div class="form-group mb-0 mt-2">
+                                                        <label class="font-12 text-black text-bold">Driver's Gender</label>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="col-12 px-0">
+                                                    <div class="row mx-0 m-0">
+                                                    <div class="col-auto pl-0">
+                                                            <div class="checkbox col-lg-3 col-sm-12 mb-2">
+                                                                <input type="radio" name="gender_check" id="male-check">
+                                                                <label class="checkbox__label driver-checkbox" for="male-check"><strong>Male</strong></label>
+                                                            </div>
+                                                    </div>
+                
+                                                        <div class="col-auto">
+                                                            <div class="checkbox col-lg-3 col-sm-12 mb-2">
+                                                                <input type="radio" name="gender_check" id="female-check">
+                                                                <label class="checkbox__label driver-checkbox" for="female-check"><strong>Female</strong></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+        
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="form-group mb-4 mt-2">
+                                                        <label class="text-black font-12 text-bold">Make</label>
+                                                        <select id="make_select" class="selectpicker map-page-select form-control show-tick" title="Vehicle make" placeholder="Vehicle make" data-live-search="true">
+                                                            <option value="nissan">Nissan</option>
+                                                            <option value="Toyota">Toyota</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="form-group mb-4 mt-2">
+                                                        <label class="text-black font-12 text-bold">Model</label>
+                                                        <select id="make_select" class="selectpicker map-page-select form-control show-tick" title="Vehicle model" placeholder="Vehicle model" data-live-search="true">
+                                                            <option value="nissan">Tiida</option>
+                                                            <option value="Toyota">March</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                       </div>
+
+
+                                    </div>
+                                </div>
+                                
+
+                                <div class="ride-details">
+                                    <div class="">
+                                        <p>Total Cost</p>
+                                        <div>                                        
+                                            <sub>KES</sub>
+                                            <h6 id="package-fair">00</h6>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <p>Distance</p>
+                                        <h6 class="journey-distance">0.00Km</h6>
+                                    </div>
+
+                                    <div>
+                                        <p>Duration</p>
+                                        <h6 class="journey-duration">0.00 Mins</h6>
+                                    </div>
+                                </div>
+                               
+
+                            </div>
+                            <div class="card-footer">
+                              <div class="payment-mode">
+                                  <span>
+                                    <span class="btn v5 btn-mpesa">MPESA</span>
+                                     <strong class="font-bold text-black"> ...459</strong>
+                                  </span>
+
+                                  <span>
+                                     <strong data-toggle="modal" data-target="#paymentMode">Change <span class="arrow_triangle-right"></span></strong>
+                                  </span>
+                              </div>
+                                <button class="btn btn-primary btn-block border-0 package-btn-name mt-2" >
+                                   Request sweet boda
+                                </button>
+                           </div>
+
+                            <!-- more information on the package -->
+                            <div class="card-body more-package-details d-none animated fadeInLeft"> 
+                               <div class="info-header">
+                                    <h4>Comfort</h4>
+                                    <span class="ti-close close-details"></span>       
+                               </div> 
+                               <div class="img MB-3">
+                                   <img src="images/homeImages/bike.png" class="img">
+                               </div>     
+                               <h5 class="mb-0 info-price">KES 790.00</h5>  
+                               <P class="pb-2"> Arrives In <strong class="arival-time-details">6 mins</strong>. 02:17 pm drop off  <strong class="info-seater">2</strong> Seater.</P> 
+
+                                <table class="table table-striped table-sm border mt-5 mb-3 package-rates">
+                                   
+                                    <tbody class="text-black font-12 mt-3">
+                                      <tr>
+                                        <td>Base fare</td>
+                                        <th>KES 85</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Minimum fare</td>
+                                        <th>KES 85</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Cancellation fee</td>
+                                        <th>KES 85</th>
+                                      </tr>
+
+                                      <tr>
+                                        <td>Per minute</td>
+                                        <th>KES 85</th>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                 <div class="font-12 text-black ">
+                                    <p>Additional wait time charges may apply to your trip if the driver has waited <strong>5 minutes: KES 5 per minute.</strong></p>
+
+                                    <p>Your fare will be the price presented before the trip or based on the rates below and other applicable surcharges and adjustments.</p>
+                                 </div>
+
+                                 
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+
+        </div>
+    </div>
+        
+    <!--Scripts starts-->
+    <!--plugin js-->
+    <script src="js/plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <!--Main js-->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/mapping-datatesting.js"></script> -->
+    <script src="js/mapping-try2.js"></script>
+     <!-- axios to be used for geocoding -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+        
+
+     <script defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvQMZoz8iO5th02I1xZoiZdqd_8HaM-zQ&callback=initMap">
+     </script>
+
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvQMZoz8iO5th02I1xZoiZdqd_8HaM-zQ&callback=initMap&libraries=places&v=weekly"
+    defer>
+    </script>
+
+
+    <!--Scripts ends-->
+</body>
+
+
+<!-- Mirrored from demo.lion-coders.com/html/sarchholm-real-estate-template/home-v1.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jan 2021 15:13:36 GMT -->
+</html>
