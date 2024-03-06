@@ -2440,7 +2440,7 @@ ul.hero_list li:last-child {
 }
 
 .hero__form.v1 .custom-select.hero__form-input {
-    line-height: 25px !important;
+    /* line-height: 25px !important; */
     font-size: 15px;
 }
 
@@ -14721,5 +14721,99 @@ transition: .6s;
 .btn-blue{
     background-color:#5997ff !important ;
 }
+.h-45px{
+    height: 45px !important;
+    padding: 4px 35px 0 45px;
+}
+.bg-light{
+    background: #f7f7f7 !important;
+}
 
+.hero__form.v2.filter.listing-filter
+{
+    border: 1px solid #dddddd;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 7px;
+}
+.journey-line::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    /* height: 1px; */
+    background-color: transparent;
+    transform: translateX(-50%);
+    border-bottom: 2px dashed #dddddd;
+    /* border-width: 1px; */
+    /* border-style: dashed;*/
+}
 
+.arrive-cont{
+    position: relative;
+}
+.arrive-cont::before{
+    content: "";
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dddddd;
+    position: absolute;
+}
+
+.start-cont{
+    position: relative;
+}
+
+.start-cont::before{
+    content: "";
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: #dddddd 2px solid;
+    position: absolute;
+}
+.pt-60px{
+    padding-top: 60px !important;
+}
+.trip-details-cont{
+    border: 1px solid #dddddd;
+}
+
+.trip-details-header{
+    padding: 1.5rem;
+    border-bottom: #dddddd 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+.trip-details-header h4{
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.trip-details-body{
+    padding: 1.5rem;
+}
+.trip-details-body table{
+    font-size: 14px;
+}
+.trip-details-body table th{
+    padding-left: 0px;
+    font-size: 14px;
+}
+
+.trip-details-body table td{
+    padding-right: 0px;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+.trip-details-body table hr{
+    width: 168px;
+    border: 1px dashed #dddddd;
+}

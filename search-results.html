@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en-US">
 
 
-<!-- Mirrored from demo.lion-coders.com/html/sarchholm-real-estate-template/list-fullwidth-map.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jan 2021 15:16:36 GMT -->
+<!-- Mirrored from demo.lion-coders.com/html/sarchholm-real-estate-template/list-fullwidth.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jan 2021 15:16:36 GMT -->
 <head>
     <!-- Metas -->
     <meta charset="UTF-8" />
@@ -17,7 +17,7 @@
     <!-- style CSS -->
     <link href="css/style.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>Search results</title>
+    <title>Search Results</title>
 </head>
 
 <body>
@@ -31,12 +31,12 @@
         <!--header starts-->
         <header class="header transparent scroll-hide">
             <!--Main Menu starts-->
-            <div class="site-navbar-wrap v2 style2">
+            <div class="site-navbar-wrap v1">
                 <div class="container">
                     <div class="site-navbar">
                         <div class="row align-items-center">
                             <div class="col-lg-2 col-md-6 col-9 order-2 order-xl-1 order-lg-1 order-md-1">
-                                <a class="navbar-brand" href="index.html"><img src="images/logo-blue.png" alt="logo" class="img-fluid"></a>
+                                <a class="navbar-brand" href="index.html"><img src="images/logo-white.png" alt="logo" class="img-fluid"></a>
                             </div>
                             <div class="col-lg-6 col-md-1 col-3  order-3 order-xl-2 order-lg-2 order-md-3 pl-xs-0">
                                 <nav class="site-navigation text-right">
@@ -184,7 +184,7 @@
                             </div>
                             <div class="col-lg-4 col-md-5 col-12 order-1 order-xl-3 order-lg-3 order-md-2 text-right pr-xs-0">
                                 <div class="menu-btn">
-                                    <ul class="user-btn">
+                                    <ul class="user-btn v2">
                                         <li><a href="#"><i class="fas fa-arrows-alt-h"></i></a>
                                             <span>3</span>
                                         </li>
@@ -206,349 +206,168 @@
             <!--Main Menu ends-->
         </header>
         <!--Header ends-->
-        <!--fullwidth Map starts-->
-        <div class="contact-map">
-            <div class="container-fluid no-pad-lr">
+        <!--Breadcrumb section starts-->
+        <div class="breadcrumb-section bg-h" style="background-image: url(images/header/hero_1.jpg)">
+            <div class="overlay op-5"></div>
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-12 no-padding">
-                        <div id="map_right_listing"></div>
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <div class="breadcrumb-menu">
+                            <h2>Property Listing</h2>
+                            <span><a href="home-v1.html">Home</a></span>
+                            <span>Property Listing - Grid View</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--fullwidth Map ends-->
+        <!--Breadcrumb section ends-->
         <!--Listing filter starts-->
-        <div class="filter-wrapper style1 section-padding">
+
+        <div class="filter-wrapper style2 bg-white">
             <div class="container">
                 <div class="row">
-                    <!--Listing filter starts-->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <form class="hero__form v1 filter listing-filter property-filter">
-                                    <div class="row">
-                                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 py-3 pl-30 pr-0">
-                                            <div class="input-search">
-                                                <input type="text" name="place-event" id="place-event" placeholder="Enter Property, Location, Landmark ...">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 py-3 pl-30 pr-0">
-                                            <select class="hero__form-input  form-control custom-select">
-                                                <option>Select Area</option>
-                                                <option>New York</option>
-                                                <option>California</option>
-                                                <option>Washington</option>
-                                                <option>New Jersey</option>
-                                                <option>Los angeles</option>
-                                                <option>Florida</option>
+                    <div class="col-12">
+
+                        <!-- start of listing filter -->
+                        <form class="hero__form v2 filter listing-filter property-filter bg-transparent">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  pr-0">
+                                    <div class="form-group">
+                                        <label>
+                                            <h6 class="mb-0">From</h6>
+                                        </label>
+                                        <div class="">
+                                            <select class="hero__form-input form-control custom-select  w-100"
+                                                title="Select Pick Up Point">
+                                                <option value="1">DAR ES SALAAM</option>
+                                                <option value="2">PUGU</option>
+                                                <option value="3">MPIJI</option>
+                                                <option value="4">SOGA</option>
+                                                <option value="5">NGETA</option>
+                                                <option value="6">RUVU</option>
+                                                <option value="7">USIGWA</option>
                                             </select>
                                         </div>
-                                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 py-3 pl-30 pr-0">
-                                            <select class="hero__form-input  form-control custom-select">
-                                                <option>Select City</option>
-                                                <option>New York</option>
-                                                <option>California</option>
-                                                <option>Washington</option>
-                                                <option>New Jersey</option>
-                                                <option>Los angeles</option>
-                                                <option>Florida</option>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  pl-0 pr-0">
+                                    <div class="form-group">
+                                        <label>
+                                            <h6 class="mb-0">To</h6>
+                                        </label>
+                                        <div class="">
+                                            <select class="hero__form-input form-control custom-select  w-100"
+                                                title="Select Destination">
+                                                <option value="1">DAR ES SALAAM</option>
+                                                <option value="2">PUGU</option>
+                                                <option value="3">MPIJI</option>
+                                                <option value="4">SOGA</option>
+                                                <option value="5">NGETA</option>
+                                                <option value="6">RUVU</option>
+                                                <option value="7">USIGWA</option>
                                             </select>
                                         </div>
-                                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 py-3 pl-30 pr-0">
-                                            <div class="submit_btn">
-                                                <button class="btn v3" type="submit">Search</button>
-                                            </div>
-                                            <div class="dropdown-filter"><span>More Filters</span></div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  pl-0 pr-0">
+                                    <div class="form-group">
+                                        <label>
+                                            <h6 class="mb-0">Train Class</h6>
+                                        </label>
+                                        <div class="">
+                                            <select class="hero__form-input form-control custom-select  w-100"
+                                                title="Select Travel Class">
+                                                <option value="1">First Nomal</option>
+                                                <option value="2">Second Sleeping</option>
+                                                <option value="3">Third Normal</option>
+                                                
+                                            </select>
                                         </div>
-                                        <div class="explore__form-checkbox-list full-filter">
-                                            <div class="row">
-                                                <div class="col-lg-4 col-md-6 py-1 pr-30">
-                                                    <select class="hero__form-input  form-control custom-select mb-20">
-                                                        <option>Property Status</option>
-                                                        <option>Any</option>
-                                                        <option>For Rent</option>
-                                                        <option>For Sale</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 py-1 pr-30 pl-0 ">
-                                                    <select class="hero__form-input  form-control custom-select  mb-20">
-                                                        <option>Property Type</option>
-                                                        <option>Residential</option>
-                                                        <option>Commercial</option>
-                                                        <option>Land</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 py-1 pl-0">
-                                                    <select class="hero__form-input  form-control custom-select  mb-20">
-                                                        <option>Max rooms</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 py-1 pr-30 ">
-                                                    <select class="hero__form-input  form-control custom-select  mb-20">
-                                                        <option>Bed</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 py-1 pr-30 pl-0">
-                                                    <select class="hero__form-input  form-control custom-select  mb-20">
-                                                        <option>Bath</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 py-1 pl-0">
-                                                    <select class="hero__form-input  form-control custom-select  mb-20">
-                                                        <option>Agents</option>
-                                                        <option>Bob Haris</option>
-                                                        <option>Ross buttler</option>
-                                                        <option>Andrew Saimons</option>
-                                                        <option>Steve Austin</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 py-1 pr-30">
-                                                    <select class="hero__form-input  form-control custom-select  mb-20">
-                                                        <option>Agencies</option>
-                                                        <option>Onyx Equities</option>
-                                                        <option>OVG Real Estate</option>
-                                                        <option>Oxford Properties*</option>
-                                                        <option>Cortland</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 py-1 pr-30 pl-0">
-                                                    <div class="filter-sub-area style1">
-                                                        <div class="filter-title mb-10">
-                                                            <p>Price : <span><input type="text" id="amount_two"></span></p>
-                                                        </div>
-                                                        <div id="slider-range_two" class="price-range mb-30">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 py-1  pl-0">
-                                                    <div class="filter-sub-area style1">
-                                                        <div class="filter-title  mb-10">
-                                                            <p>Area : <span><input type="text" id="amount_one"></span></p>
-                                                        </div>
-                                                        <div id="slider-range_one" class="price-range mb-30">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 py-1 pr-30">
-                                                    <div class="filter-checkbox">
-                                                        <p>Sort By Features</p>
-                                                        <ul>
-                                                            <li>
-                                                                <input id="check-a" type="checkbox" name="check">
-                                                                <label for="check-a">Air Condition</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="check-b" type="checkbox" name="check">
-                                                                <label for="check-b">Swimming Pool</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="check-c" type="checkbox" name="check">
-                                                                <label for="check-c">Laundry Room</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="check-d" type="checkbox" name="check">
-                                                                <label for="check-d">Free Wifi</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="check-e" type="checkbox" name="check">
-                                                                <label for="check-e">Window Covering</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="check-f" type="checkbox" name="check">
-                                                                <label for="check-f">Central Heating </label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="check-g" type="checkbox" name="check">
-                                                                <label for="check-g">24 hour security</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="check-h" type="checkbox" name="check">
-                                                                <label for="check-h">Lawn</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="check-i" type="checkbox" name="check">
-                                                                <label for="check-i">Gym</label>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 py-1 pr-30 pl-0 ">
-                                                    <div class="filter-checkbox">
-                                                        <p>Sort By Ratings</p>
-                                                        <div>
-                                                            <input id="check-w" type="checkbox" name="check">
-                                                            <label for="check-w">
-                                                            </label>
-                                                            <div class="list-ratings">
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <input id="check-x" type="checkbox" name="check">
-                                                            <label for="check-x">
-                                                            </label>
-                                                            <div class="list-ratings">
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star-half-alt"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <input id="check-y" type="checkbox" name="check">
-                                                            <label for="check-y">
-                                                            </label>
-                                                            <div class="list-ratings">
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star-half-alt"></span>
-                                                                <span class="fas fa-star-half-alt"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <input id="check-z" type="checkbox" name="check">
-                                                            <label for="check-z">
-                                                            </label>
-                                                            <div class="list-ratings">
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star"></span>
-                                                                <span class="fas fa-star-half-alt"></span>
-                                                                <span class="fas fa-star-half-alt"></span>
-                                                                <span class="fas fa-star-half-alt"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12  pr-0">
+                                    <div class="form-group">
+                                        <label>
+                                            <h6 class="mb-0">Depature Date</h6>
+                                        </label>
+                                        <div class="d-flex">
+                                            <div class="input-calendar w-100">
+                                                <input type="text" class="form-control w-100 flatDate"
+                                                    placeholder="Date">
+                                            </div>
+                                            
+    
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 3 pl-0">
+                                    <div class="form-group">
+                                        <label>
+                                            <h6 class="mb-0">Passengers</h6>
+                                        </label>
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <input class="form-control pl-3" type="text" placeholder="Adults" title="Adult Passengers">
+                                            </div>
+                                            <div class="">
+                                                <input class="form-control pl-3" type="text" placeholder="Children" title="Children Passengers" >
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
+    
+    
+                               
+                                <div class="col-xl-1 col-lg-1 col-md-6 col-sm-12 col-12  pl-0 pr-0 d-none">
+                                    <div class="submit_btn">
+                                        <button class="btn v3" type="submit">Search</button>
+                                    </div>
+                                    
+                                </div>
+                              
                             </div>
-                        </div>
+                        </form>
+                        <!-- end of listing filter -->
                     </div>
-                    <!--Listing filter ends-->
+                </div>
+            </div>
+        </div>
+        <div class="filter-wrapper style1 section-padding bg-light pt-60px">
+           
+            <div class="container">
+                <div class="row">
+                 
                     <div class="col-md-12">
-                        <div class="row pt-60   align-items-center">
-                            <div class="col-lg-3 col-sm-5 col-5">
-                                <div class="item-view-mode res-box">
-                                    <!-- item-filter-list Menu starts -->
-                                    <ul class="nav item-filter-list" role="tablist">
-                                        <li><a data-toggle="tab" href="#grid-view"><i class="fas fa-th"></i></a></li>
-                                        <li><a class="active" data-toggle="tab" href="#list-view"><i class="fas fa-list"></i></a></li>
-                                    </ul>
-                                    <!-- item-filter-list Menu ends -->
-                                </div>
+                        <div class="row pt-0   align-items-center">
+                           <div class="col-12">
+                            <div class="section-title v2">
+                                <p>12 Available time Slots for Selected Dates</p>
+                                <h2>DAR ES SALAAM TO SOGA</h2>
                             </div>
-                            <div class="col-lg-4 col-sm-7 col-7">
-                                <select class="listing-input hero__form-input  form-control custom-select">
-                                    <option>Sort by Newest</option>
-                                    <option>Sort by Oldest</option>
-                                    <option>Sort by Featured</option>
-                                    <option>Sort by Price(Low to High)</option>
-                                    <option>Sort by Price(Low to High)</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-5 col-sm-12">
-                                <div class="item-element res-box  text-right sm-left">
-                                    <p>Showing <span>1-15 of 69</span> Listings</p>
-                                </div>
-                            </div>
+                           </div>
                         </div>
-                        <div class="item-wrapper pt-40   ">
+                        <div class="item-wrapper pt-40 ">
                             <div class="tab-content" id="myTabContent">
-                                 <div class="tab-pane   fade property-grid" id="grid-view">
+                                <div class="tab-pane  fade property-grid bg-white" id="grid-view" >
                                      <div class="row">
-                                        <div class="col-xl-4 col-md-6 col-sm-12">
+                                        <div class="col-xl-4 col-md-6 col-sm-12 d-none">
                                             <div class="single-property-box">
-                                                <div class="property-item">
-                                                    <a class="property-img" href="single-listing-two.html"><img src="images/property/property_1.jpg" alt="#">
-                                                    </a>
-                                                    <ul class="feature_text">
-                                                        <li class="feature_cb"><span> Featured</span></li>
-                                                        <li class="feature_or"><span>For Sale</span></li>
-                                                    </ul>
-                                                    <div class="property-author-wrap">
-                                                        <a href="#" class="property-author">
-                                                            <img src="images/agents/agent_min_1.jpg" alt="...">
-                                                            <span>Tony Stark</span>
-                                                        </a>
-                                                        <ul class="save-btn">
-                                                            <li data-toggle="tooltip" data-placement="top" title="Photos"><a href=".html" class="btn-gallery"><i class="lnr lnr-camera"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
-                                                        </ul>
-                                                        <div class="hidden photo-gallery">
-                                                            <a href="images/single-listing/property_view_1.jpg"></a>
-                                                            <a href="images/single-listing/property_view_2.jpg"></a>
-                                                            <a href="images/single-listing/property_view_3.jpg"></a>
-                                                            <a href="images/single-listing/property_view_4.jpg"></a>
-                                                            <a href="images/single-listing/property_view_5.jpg"></a>
-                                                            <a href="images/single-listing/property_view_6.jpg"></a>
-                                                            <a href="images/single-listing/property_view_7.jpg"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                               
                                                 <div class="property-title-box">
                                                     <h4><a href="single-listing-one.html">Villa on Hartford</a></h4>
                                                     <div class="property-location">
                                                         <i class="fa fa-map-marker-alt"></i>
                                                         <p>2854 Meadow View Drive, Hartford, USA</p>
                                                     </div>
-                                                    <ul class="property-feature">
-                                                        <li> <i class="fas fa-bed"></i>
-                                                            <span>4 Bedrooms</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-bath"></i>
-                                                            <span>3 Bath</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-arrows-alt"></i>
-                                                            <span>2142 sq ft</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-car"></i>
-                                                            <span>2 Garage</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="trending-bottom">
-                                                        <div class="trend-left float-left">
-                                                            <ul class="product-rating">
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                            </ul>
-                                                        </div>
-                                                        <a class="trend-right float-right">
-                                                            <div class="trend-open">
-                                                                <p><span class="per_sale">starts from</span>$25000</p>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                                  
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-4 col-md-6 col-sm-12">
+                                        <div class="col-xl-12 col-md-12 col-sm-12">
                                             <div class="single-property-box">
                                                 <div class="property-item">
                                                     <a class="property-img" href="single-listing-two.html"><img src="images/property/property_3.jpg" alt="#"></a>
@@ -1035,73 +854,33 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane show active fade property-list fullwidth" id="list-view">
-                                    <div class="single-property-box">
+                                <div class="tab-pane  show active fade property-list fullwidth " id="list-view">
+                                    <div class="single-property-box bg-white">
                                         <div class="row">
-                                            <div class="col-xl-5 col-lg-4 col-md-12">
-                                                <div class="property-item">
-                                                    <a class="property-img" href="single-listing-two.html"><img src="images/property/property_1.jpg" alt="#">
-                                                    </a>
-                                                    <ul class="feature_text">
-                                                        <li class="feature_cb"><span> Featured</span></li>
-                                                        <li class="feature_or"><span>For Sale</span></li>
-                                                    </ul>
-                                                    <div class="property-author-wrap">
-                                                        <a href="#" class="property-author">
-                                                            <img src="images/agents/agent_min_1.jpg" alt="...">
-                                                            <span>Tony Stark</span>
-                                                        </a>
-                                                        <ul class="save-btn">
-                                                            <li data-toggle="tooltip" data-placement="top" title="Photos"><a href=".html" class="btn-gallery"><i class="lnr lnr-camera"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
-                                                        </ul>
-                                                        <div class="hidden photo-gallery">
-                                                            <a href="images/single-listing/property_view_1.jpg"></a>
-                                                            <a href="images/single-listing/property_view_2.jpg"></a>
-                                                            <a href="images/single-listing/property_view_3.jpg"></a>
-                                                            <a href="images/single-listing/property_view_4.jpg"></a>
-                                                            <a href="images/single-listing/property_view_5.jpg"></a>
-                                                            <a href="images/single-listing/property_view_6.jpg"></a>
-                                                            <a href="images/single-listing/property_view_7.jpg"></a>
+                                            
+                                            <div class="col-xl-9 col-lg-9 col-md-12">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="property-title-box p-5 start-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
+                                                        <h4>10:25 AM</h4>
+                                                        <small class="text-primary text-capitalize">Depature time</small>
+                                                       
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-5 col-md-12">
-                                                <div class="property-title-box">
-                                                    <h4><a href="single-listing-one.html">Villa on Hartford</a></h4>
-                                                    <div class="property-location">
-                                                        <i class="fa fa-map-marker-alt"></i>
-                                                        <p>2854 Meadow View Drive, Hartford, USA</p>
+
+                                                    <div class="d-flex flex-column align-items-center justify-content-center text-center journey-line position-relative flex-grow-1">
+                                                        <span class="lnr lnr-history"></span>
+                                                      <span class="fw-bold text-black pt-3">1h 15m Non Stop</span>
                                                     </div>
-                                                    <ul class="property-feature">
-                                                        <li> <i class="fas fa-bed"></i>
-                                                            <span>4 Bedrooms</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-bath"></i>
-                                                            <span>3 Bath</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-arrows-alt"></i>
-                                                            <span>2142 sq ft</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-car"></i>
-                                                            <span>2 Garage</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="trending-bottom">
-                                                        <div class="trend-left float-left">
-                                                            <p class="list-date"><i class="lnr lnr-calendar-full"></i>1 day ago</p>
+    
+                                                    <div class="property-title-box p-5 arrive-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
-                                                        <div class="trend-right float-right">
-                                                            <ul class="product-rating">
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                            </ul>
-                                                        </div>
+                                                        <h4>12:45 PM</h4>
+                                                        <small class="text-primary text-capitalize">Arrival Time</small>
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -1109,11 +888,87 @@
                                                 <div class="row list-extra">
                                                     <div class="col-md-12 col-7 sm-left">
                                                         <div class="trend-open">
-                                                            <p><span class="per_sale">starts from</span>$25000</p>
+                                                            <p><span class=""></span>TSH 25,000</p>
+                                                            
                                                         </div>
+                                                        <p><span class=" text-capitalize text-right pb-3 ">34 Available Slots</span></p>
+
+                                                        <a href="single-listing-one.html" class="btn v7">Select Slot</a>
+
                                                     </div>
-                                                    <div class="col-md-12 col-5">
-                                                        <a href="single-listing-one.html" class="btn v7">Take a tour</a>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 ">
+                                                <div class="p-5 border-top ">
+                                                    <div class=" trip-details-cont">
+                                                        <div class="trip-details-header">
+                                                            <h4>Depart • Thus, 12 Jun 2024 At <span class="text-primary">10:45 AM</span></h4>
+                                                            <h4 class="text-right">1h 30m Trip</h4>
+                                                        </div>
+                                                        <div class="trip-details-body">
+                                                            
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Economy Class Rates</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>Adults (18+ Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">KES 2000 Per Trip</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Children (4-17 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">KES 2000 Per Trip</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">KES 0.00 Per Trip</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Trip Details</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>Trip Time</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">1h 30 Min</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Children (4-17 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">KES 2000 Per Trip</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">KES 0.00 Per Trip</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1747,14 +1602,13 @@
     </div>
     <!--Page Wrapper ends-->
     <!--Footer Starts-->
-    <div class="footer-wrapper v1">
-        
+    <div class="footer-wrapper v2">
         <div class="footer-top-area">
             <div class="container">
                 <div class="row nav-folderized">
                     <div class="col-lg-4 col-md-12">
                         <div class="footer-logo">
-                            <a href="index.html"> <img src="images/logo-blue.png" alt="logo"></a>
+                            <a href="index.html"> <img src="images/logo-white.png" alt="logo"></a>
                             <div class="company-desc">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi nam totam sequi, ipsam consequatur repudiandae libero illum.
@@ -1971,18 +1825,13 @@
     <!--plugin js-->
     <script src="js/plugin.js"></script>
     <!--google maps-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_8C7p0Ws2gUu7wo0b6pK9Qu7LuzX2iWY&amp;libraries=places&amp;callback=initAutocomplete"></script>
-    <!--Markercluster js-->
-    <script src="js/markerclusterer.js"></script>
-    <!--Maps js-->
-    <script src="js/maps.js"></script>
-    <!--Infobox js-->
-    <script src="js/infobox.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_8C7p0Ws2gUu7wo0b6pK9Qu7LuzX2iWY&amp;libraries=places&amp;callback=initAutocomplete">
+    </script>
     <!--Main js-->
     <script src="js/main.js"></script>
     <!--Scripts ends-->
 </body>
 
 
-<!-- Mirrored from demo.lion-coders.com/html/sarchholm-real-estate-template/list-fullwidth-map.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jan 2021 15:16:36 GMT -->
+<!-- Mirrored from demo.lion-coders.com/html/sarchholm-real-estate-template/list-fullwidth.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jan 2021 15:16:36 GMT -->
 </html>
