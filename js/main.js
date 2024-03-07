@@ -765,6 +765,13 @@
 
     });
 
+    // more details
+    $('.trip-details-btn').on('click', function(){
+       $(this).children('i').toggleClass('rotate-180')
+       $(this).parent().parent().siblings('.trip-details-cont').toggleClass('d-none')
+    })
+
+    // end of details
     /*---------------------------------
                Bootstrap select
     -----------------------------------*/
@@ -907,3 +914,4 @@
         $('.mapOptionsControls').removeClass('d-none');
     });
 
+    

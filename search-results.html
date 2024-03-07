@@ -213,9 +213,9 @@
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center">
                         <div class="breadcrumb-menu">
-                            <h2>Property Listing</h2>
-                            <span><a href="home-v1.html">Home</a></span>
-                            <span>Property Listing - Grid View</span>
+                            <h2>Search Results</h2>
+                            <span><a href="index.html">Home</a></span>
+                            <span>Search Results</span>
                         </div>
                     </div>
                 </div>
@@ -230,7 +230,7 @@
                     <div class="col-12">
 
                         <!-- start of listing filter -->
-                        <form class="hero__form v2 filter listing-filter property-filter bg-transparent">
+                        <form class="hero__form v2 filter listing-filter property-filter bg-transparent flight-seracher">
                             <div class="row">
                                 <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  pr-0">
                                     <div class="form-group">
@@ -893,14 +893,23 @@
                                                         </div>
                                                         <p><span class=" text-capitalize text-right pb-3 ">34 Available Slots</span></p>
 
-                                                        <a href="single-listing-one.html" class="btn v7">Select Slot</a>
+                                                        <button class="btn v7" data-toggle="modal" data-target="#payment-pop">Book Train</button>
 
                                                     </div>
                                                    
                                                 </div>
                                             </div>
-                                            <div class="col-xl-12 col-lg-12 col-md-12 ">
-                                                <div class="p-5 border-top ">
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex justify-content-between align-items-center mx-5 pb-4 pt-4 mt-2 toogle-btn-cont">
+                                                    <h4 class="pb-0 text-primary d-flex align-items-center mb-0 trip-details-btn mouse-pointer">
+                                                        <i class="lnr lnr-chevron-down mr-3 rotate-180"></i>
+                                                        <span>Trip Details</span>
+                                                    </h4>
+                                                    <p>Price per person (incl. taxes & fees)</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 d-none trip-details-cont">
+                                                <div class="px-5 pb-5 border-top pt-0">
                                                     <div class=" trip-details-cont">
                                                         <div class="trip-details-header">
                                                             <h4>Depart • Thus, 12 Jun 2024 At <span class="text-primary">10:45 AM</span></h4>
@@ -914,26 +923,26 @@
                                                                     <table class="table mt-3 table-sm">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Adults (18+ Years)</th>
+                                                                                <th>4 Adults (18+ Years)</th>
                                                                                 <td>
                                                                                     <hr>
                                                                                 </td>
-                                                                                <td class="text-right">KES 2000 Per Trip</td>
+                                                                                <td class="text-right">TSH 45000</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Children (4-17 Years)</th>
+                                                                                <th>1 Child (4-17 Years)</th>
                                                                                 <td>
                                                                                     <hr>
                                                                                 </td>
-                                                                                <td class="text-right">KES 2000 Per Trip</td>
+                                                                                <td class="text-right">TSH 2000</td>
                                                                             </tr>
 
                                                                             <tr>
-                                                                                <th>Children (0-3 Years)</th>
+                                                                                <th>0 Children (0-3 Years)</th>
                                                                                 <td>
                                                                                     <hr>
                                                                                 </td>
-                                                                                <td class="text-right">KES 0.00 Per Trip</td>
+                                                                                <td class="text-right">TSH 0.00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -950,11 +959,11 @@
                                                                                 <td class="text-right">1h 30 Min</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Children (4-17 Years)</th>
+                                                                                <th>Stops</th>
                                                                                 <td>
                                                                                     <hr>
                                                                                 </td>
-                                                                                <td class="text-right">KES 2000 Per Trip</td>
+                                                                                <td class="text-right">0 Stops (0 Hrs)</td>
                                                                             </tr>
 
                                                                             <tr>
@@ -974,205 +983,33 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="single-property-box">
+
+                                    <div class="single-property-box bg-white">
                                         <div class="row">
-                                            <div class="col-xl-5 col-lg-4 col-md-12">
-                                                <div class="property-item">
-                                                    <a class="property-img" href="single-listing-two.html"><img src="images/property/property_3.jpg" alt="#"></a>
-                                                <ul class="feature_text">
-                                                    <li class="feature_or"><span>For Rent</span></li>
-                                                </ul>
-                                                <div class="property-author-wrap">
-                                                    <a href="#" class="property-author">
-                                                        <img src="images/agents/agency_2.jpg" alt="...">
-                                                        <span>Zilion Properties</span>
-                                                    </a>
-                                                    <ul class="save-btn">
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-5 col-md-12">
-                                                <div class="property-title-box">
-                                                <h4><a href="single-listing-one.html">Family home in Glasgow</a></h4>
-                                                <div class="property-location">
-                                                    <i class="fa fa-map-marker-alt"></i>
-                                                    <p>60 High St, Glasgow, London</p>
-                                                </div>
-                                                <ul class="property-feature">
-                                                    <li> <i class="fas fa-bed"></i>
-                                                        <span>3 Bedrooms</span>
-                                                    </li>
-                                                    <li> <i class="fas fa-bath"></i>
-                                                        <span>3 Bath</span>
-                                                    </li>
-                                                    <li> <i class="fas fa-arrows-alt"></i>
-                                                        <span>1982 sq ft</span>
-                                                    </li>
-                                                    <li> <i class="fas fa-car"></i>
-                                                        <span>1 Garage</span>
-                                                    </li>
-                                                </ul>
-                                                <div class="trending-bottom">
-                                                        <div class="trend-left float-left">
-                                                            <p class="list-date"><i class="lnr lnr-calendar-full"></i>2 days ago</p>
+                                            
+                                            <div class="col-xl-9 col-lg-9 col-md-12">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="property-title-box p-5 start-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
-                                                        <a class="trend-right float-right">
-                                                            <ul class="product-rating">
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                            </ul>
-                                                        </a>
+                                                        <h4>10:25 AM</h4>
+                                                        <small class="text-primary text-capitalize">Depature time</small>
+                                                       
                                                     </div>
-                                            </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-12">
-                                                <div class="row list-extra">
-                                                    <div class="col-md-12 col-7 sm-left">
-                                                        <div class="trend-open">
-                                                            <p>$7500<span class="per_month">month</span></p>
+
+                                                    <div class="d-flex flex-column align-items-center justify-content-center text-center journey-line position-relative flex-grow-1">
+                                                        <span class="lnr lnr-history"></span>
+                                                      <span class="fw-bold text-black pt-3">1h 15m Non Stop</span>
+                                                    </div>
+    
+                                                    <div class="property-title-box p-5 arrive-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-md-12 col-5">
-                                                        <a href="single-listing-one.html" class="btn v7">Take a tour</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-property-box">
-                                        <div class="row">
-                                            <div class="col-xl-5 col-lg-4 col-md-12">
-                                            <div class="property-item">
-                                                <a class="property-img" href="single-listing-two.html"><img src="images/property/property_6.jpg" alt="#"></a>
-                                                <ul class="feature_text">
-                                                    <li class="feature_cb"><span> New</span></li>
-                                                    <li class="feature_or"><span>For Sale</span></li>
-                                                </ul>
-                                                <div class="property-author-wrap">
-                                                    <a href="#" class="property-author">
-                                                        <img src="images/agents/agent_min_2.jpg" alt="...">
-                                                        <span>Bob Haris</span>
-                                                    </a>
-                                                    <ul class="save-btn">
-                                                        <li data-toggle="tooltip" data-placement="top" title="Video"><a href="https://www.youtube.com/watch?v=v_ATnE02qFs" class="property-yt"><i class="fas fa-play"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                        <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-5 col-md-12">
-                                                <div class="property-title-box">
-                                                <h4><a href="single-listing-one.html">Apartment in Cecil Lake</a></h4>
-                                                <div class="property-location">
-                                                    <i class="fa fa-map-marker-alt"></i>
-                                                    <p>131 midlas , Cecil Lake, BC</p>
-                                                </div>
-                                                <ul class="property-feature">
-                                                    <li> <i class="fas fa-bed"></i>
-                                                        <span>3 Bedrooms</span>
-                                                    </li>
-                                                    <li> <i class="fas fa-bath"></i>
-                                                        <span>2 Bath</span>
-                                                    </li>
-                                                    <li> <i class="fas fa-arrows-alt"></i>
-                                                        <span>1600 sq ft</span>
-                                                    </li>
-                                                    <li> <i class="fas fa-car"></i>
-                                                        <span>1 Garage</span>
-                                                    </li>
-                                                </ul>
-                                                <div class="trending-bottom">
-                                                        <div class="trend-left float-left">
-                                                            <p class="list-date"><i class="lnr lnr-calendar-full"></i>2 days ago</p>
-                                                        </div>
-                                                        <div class="trend-right float-right">
-                                                            <ul class="product-rating">
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-12">
-                                                <div class="row list-extra">
-                                                    <div class="col-md-12 col-7 sm-left">
-                                                        <div class="trend-open">
-                                                            <p><span class="per_sale">starts from</span>$9000</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12 col-5">
-                                                        <a href="single-listing-one.html" class="btn v7">Take a tour</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-property-box">
-                                        <div class="row">
-                                            <div class="col-xl-5 col-lg-4 col-md-12">
-                                                <div class="property-item">
-                                                    <a class="property-img" href="single-listing-two.html"><img src="images/property/property_2.jpg" alt="#"> </a>
-                                                    <ul class="feature_text">
-                                                        <li class="feature_cb"><span>New</span></li>
-                                                        <li class="feature_or"><span>For Rent</span></li>
-                                                    </ul>
-                                                    <div class="property-author-wrap">
-                                                        <a href="#" class="property-author">
-                                                            <img src="images/agents/agent_min_2.jpg" alt="...">
-                                                            <span>Bob haris</span>
-                                                        </a>
-                                                        <ul class="save-btn">
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-5 col-md-12">
-                                                <div class="property-title-box">
-                                                    <h4><a href="single-listing-one.html">Bay view Apartment</a></h4>
-                                                    <div class="property-location">
-                                                        <i class="fa fa-map-marker-alt"></i>
-                                                        <p>1797 Hillcrest Lane, Boulevard, CA</p>
-                                                    </div>
-                                                    <ul class="property-feature">
-                                                        <li> <i class="fas fa-bed"></i>
-                                                            <span>3 Bedrooms</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-bath"></i>
-                                                            <span>2 Bath</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-arrows-alt"></i>
-                                                            <span>1400 sq ft</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-car"></i>
-                                                            <span>1 Garage</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="trending-bottom">
-                                                        <div class="trend-left float-left">
-                                                            <p class="list-date"><i class="lnr lnr-calendar-full"></i>3 days ago</p>
-                                                        </div>
-                                                        <div class="trend-right float-right">
-                                                            <ul class="product-rating">
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                            </ul>
-                                                        </div>
+                                                        <h4>12:45 PM</h4>
+                                                        <small class="text-primary text-capitalize">Arrival Time</small>
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -1180,71 +1017,128 @@
                                                 <div class="row list-extra">
                                                     <div class="col-md-12 col-7 sm-left">
                                                         <div class="trend-open">
-                                                            <p>$4000<span class="per_month">month</span></p>
+                                                            <p><span class=""></span>TSH 25,000</p>
+                                                            
                                                         </div>
+                                                        <p><span class=" text-capitalize text-right pb-3 ">34 Available Slots</span></p>
+
+                                                        <button class="btn v7" data-toggle="modal" data-target="#payment-pop">Book Train</button>
+
                                                     </div>
-                                                    <div class="col-md-12 col-5">
-                                                        <a href="single-listing-one.html" class="btn v7">Take a tour</a>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex justify-content-between align-items-center mx-5 pb-4 pt-4 mt-2 toogle-btn-cont">
+                                                    <h4 class="pb-0 text-primary d-flex align-items-center mb-0 trip-details-btn mouse-pointer">
+                                                        <i class="lnr lnr-chevron-down mr-3 rotate-180"></i>
+                                                        <span>Trip Details</span>
+                                                    </h4>
+                                                    <p>Price per person (incl. taxes & fees)</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 d-none trip-details-cont">
+                                                <div class="px-5 pb-5 border-top pt-0">
+                                                    <div class=" trip-details-cont">
+                                                        <div class="trip-details-header">
+                                                            <h4>Depart • Thus, 12 Jun 2024 At <span class="text-primary">10:45 AM</span></h4>
+                                                            <h4 class="text-right">1h 30m Trip</h4>
+                                                        </div>
+                                                        <div class="trip-details-body">
+                                                            
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Economy Class Rates</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>4 Adults (18+ Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 45000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>1 Child (4-17 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 2000</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>0 Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 0.00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Trip Details</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>Trip Time</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">1h 30 Min</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Stops</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">0 Stops (0 Hrs)</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">KES 0.00 Per Trip</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="single-property-box">
+
+                                    <div class="single-property-box bg-white">
                                         <div class="row">
-                                            <div class="col-xl-5 col-lg-4 col-md-12">
-                                                <div class="property-item">
-                                                    <a class="property-img" href="single-listing-two.html"><img src="images/property/property_4.jpg" alt="#"></a>
-                                                    <ul class="feature_text">
-                                                        <li class="feature_cb"><span> Featured</span></li>
-                                                        <li class="feature_or"><span>For Sale</span></li>
-                                                    </ul>
-                                                    <div class="property-author-wrap">
-                                                        <a href="#" class="property-author">
-                                                            <img src="images/agents/agency_4.jpg" alt="...">
-                                                            <span>Hexa Properties</span>
-                                                        </a>
-                                                        <ul class="save-btn">
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-5 col-md-12">
-                                               <div class="property-title-box">
-                                                    <h4><a href="single-listing-one.html">Office Space in Thatcham</a></h4>
-                                                    <div class="property-location">
-                                                        <i class="fa fa-map-marker-alt"></i>
-                                                        <p>Colthrop Lane, Thatcham, London</p>
-                                                    </div>
-                                                    <ul class="property-feature">
-                                                        <li> <i class="fas fa-home"></i>
-                                                            <span>6 Rooms</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-bath"></i>
-                                                            <span>2 Bath</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-arrows-alt"></i>
-                                                            <span>1400 sq ft</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-car"></i>
-                                                            <span>1 Garage</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="trending-bottom">
-                                                        <div class="trend-left float-left">
-                                                            <p class="list-date"><i class="lnr lnr-calendar-full"></i>4 days ago</p>
+                                            
+                                            <div class="col-xl-9 col-lg-9 col-md-12">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="property-title-box p-5 start-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
-                                                        <div class="trend-right float-right">
-                                                            <ul class="product-rating">
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                            </ul>
+                                                        <h4>10:25 AM</h4>
+                                                        <small class="text-primary text-capitalize">Depature time</small>
+                                                       
+                                                    </div>
+
+                                                    <div class="d-flex flex-column align-items-center justify-content-center text-center journey-line position-relative flex-grow-1">
+                                                        <span class="lnr lnr-history"></span>
+                                                      <span class="fw-bold text-black pt-3">1h 15m Non Stop</span>
+                                                    </div>
+    
+                                                    <div class="property-title-box p-5 arrive-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
+                                                        <h4>12:45 PM</h4>
+                                                        <small class="text-primary text-capitalize">Arrival Time</small>
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -1252,81 +1146,128 @@
                                                 <div class="row list-extra">
                                                     <div class="col-md-12 col-7 sm-left">
                                                         <div class="trend-open">
-                                                            <p><span class="per_sale">starts from</span>$12000</p>
+                                                            <p><span class=""></span>TSH 25,000</p>
+                                                            
                                                         </div>
+                                                        <p><span class=" text-capitalize text-right pb-3 ">34 Available Slots</span></p>
+
+                                                        <button class="btn v7" data-toggle="modal" data-target="#payment-pop">Book Train</button>
+
                                                     </div>
-                                                    <div class="col-md-12 col-5">
-                                                        <a href="single-listing-one.html" class="btn v7">Take a tour</a>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex justify-content-between align-items-center mx-5 pb-4 pt-4 mt-2 toogle-btn-cont">
+                                                    <h4 class="pb-0 text-primary d-flex align-items-center mb-0 trip-details-btn mouse-pointer">
+                                                        <i class="lnr lnr-chevron-down mr-3 rotate-180"></i>
+                                                        <span>Trip Details</span>
+                                                    </h4>
+                                                    <p>Price per person (incl. taxes & fees)</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 d-none trip-details-cont">
+                                                <div class="px-5 pb-5 border-top pt-0">
+                                                    <div class=" trip-details-cont">
+                                                        <div class="trip-details-header">
+                                                            <h4>Depart • Thus, 12 Jun 2024 At <span class="text-primary">10:45 AM</span></h4>
+                                                            <h4 class="text-right">1h 30m Trip</h4>
+                                                        </div>
+                                                        <div class="trip-details-body">
+                                                            
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Economy Class Rates</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>4 Adults (18+ Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 45000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>1 Child (4-17 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 2000</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>0 Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 0.00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Trip Details</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>Trip Time</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">1h 30 Min</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Stops</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">0 Stops (0 Hrs)</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">KES 0.00 Per Trip</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="single-property-box">
+
+                                    <div class="single-property-box bg-white">
                                         <div class="row">
-                                            <div class="col-xl-5 col-lg-4 col-md-12">
-                                                <div class="property-item">
-                                                    <a class="property-img" href="single-listing-two.html"><img src="images/property/property_5.jpg" alt="#">
-                                                    </a>
-                                                    <ul class="feature_text">
-                                                        <li class="feature_or"><span>For Sale</span></li>
-                                                    </ul>
-                                                    <div class="property-author-wrap">
-                                                        <a href="#" class="property-author">
-                                                            <img src="images/agents/agency_3.jpg" alt="...">
-                                                            <span>Seaside Properties</span>
-                                                        </a>
-                                                        <ul class="save-btn">
-                                                            <li data-toggle="tooltip" data-placement="top" title="Photos"><a href=".html" class="btn-gallery"><i class="lnr lnr-camera"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
-                                                        </ul>
-                                                        <div class="hidden photo-gallery">
-                                                            <a href="images/single-listing/property_view_1.jpg"></a>
-                                                            <a href="images/single-listing/property_view_2.jpg"></a>
-                                                            <a href="images/single-listing/property_view_3.jpg"></a>
-                                                            <a href="images/single-listing/property_view_4.jpg"></a>
-                                                            <a href="images/single-listing/property_view_5.jpg"></a>
-                                                            <a href="images/single-listing/property_view_6.jpg"></a>
-                                                            <a href="images/single-listing/property_view_7.jpg"></a>
+                                            
+                                            <div class="col-xl-9 col-lg-9 col-md-12">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="property-title-box p-5 start-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
+                                                        <h4>10:25 AM</h4>
+                                                        <small class="text-primary text-capitalize">Depature time</small>
+                                                       
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-5 col-md-12">
-                                                <div class="property-title-box">
-                                                    <h4><a href="single-listing-one.html">Luxury Villa in Birmingham</a></h4>
-                                                    <div class="property-location">
-                                                        <i class="fa fa-map-marker-alt"></i>
-                                                        <p>159 Dudley Rd, Birmingham, UK</p>
+
+                                                    <div class="d-flex flex-column align-items-center justify-content-center text-center journey-line position-relative flex-grow-1">
+                                                        <span class="lnr lnr-history"></span>
+                                                      <span class="fw-bold text-black pt-3">1h 15m Non Stop</span>
                                                     </div>
-                                                    <ul class="property-feature">
-                                                        <li> <i class="fas fa-bed"></i>
-                                                            <span>5 Bedrooms</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-bath"></i>
-                                                            <span>4 Bath</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-arrows-alt"></i>
-                                                            <span>3000 sq ft</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-car"></i>
-                                                            <span>2 Garage</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="trending-bottom">
-                                                        <div class="trend-left float-left">
-                                                            <p class="list-date"><i class="lnr lnr-calendar-full"></i>4 days ago</p>
+    
+                                                    <div class="property-title-box p-5 arrive-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
-                                                        <div class="trend-right float-right">
-                                                            <ul class="product-rating">
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                            </ul>
-                                                        </div>
+                                                        <h4>12:45 PM</h4>
+                                                        <small class="text-primary text-capitalize">Arrival Time</small>
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -1334,72 +1275,128 @@
                                                 <div class="row list-extra">
                                                     <div class="col-md-12 col-7 sm-left">
                                                         <div class="trend-open">
-                                                            <p><span class="per_sale">starts from</span>$21000</p>
+                                                            <p><span class=""></span>TSH 25,000</p>
+                                                            
                                                         </div>
+                                                        <p><span class=" text-capitalize text-right pb-3 ">34 Available Slots</span></p>
+
+                                                        <button class="btn v7" data-toggle="modal" data-target="#payment-pop">Book Train</button>
+
                                                     </div>
-                                                    <div class="col-md-12 col-5">
-                                                        <a href="single-listing-one.html" class="btn v7">Take a tour</a>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex justify-content-between align-items-center mx-5 pb-4 pt-4 mt-2 toogle-btn-cont">
+                                                    <h4 class="pb-0 text-primary d-flex align-items-center mb-0 trip-details-btn mouse-pointer">
+                                                        <i class="lnr lnr-chevron-down mr-3 rotate-180"></i>
+                                                        <span>Trip Details</span>
+                                                    </h4>
+                                                    <p>Price per person (incl. taxes & fees)</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 d-none trip-details-cont">
+                                                <div class="px-5 pb-5 border-top pt-0">
+                                                    <div class=" trip-details-cont">
+                                                        <div class="trip-details-header">
+                                                            <h4>Depart • Thus, 12 Jun 2024 At <span class="text-primary">10:45 AM</span></h4>
+                                                            <h4 class="text-right">1h 30m Trip</h4>
+                                                        </div>
+                                                        <div class="trip-details-body">
+                                                            
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Economy Class Rates</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>4 Adults (18+ Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 45000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>1 Child (4-17 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 2000</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>0 Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 0.00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Trip Details</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>Trip Time</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">1h 30 Min</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Stops</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">0 Stops (0 Hrs)</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">KES 0.00 Per Trip</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="single-property-box">
+
+                                    <div class="single-property-box bg-white">
                                         <div class="row">
-                                            <div class="col-xl-5 col-lg-4 col-md-12">
-                                                <div class="property-item">
-                                                    <a class="property-img" href="single-listing-two.html"><img src="images/property/property_9.jpg" alt="#"> </a>
-                                                    <ul class="feature_text">
-                                                        <li class="feature_cb"><span>New</span></li>
-                                                        <li class="feature_or"><span>For Sale</span></li>
-                                                    </ul>
-                                                    <div class="property-author-wrap">
-                                                        <a href="#" class="property-author">
-                                                            <img src="images/agents/agent_min_3.jpg" alt="...">
-                                                            <span>Jim Carry</span>
-                                                        </a>
-                                                        <ul class="save-btn">
-                                                            <li data-toggle="tooltip" data-placement="top" title="Video"><a href="https://www.youtube.com/watch?v=v_ATnE02qFs" class="property-yt"><i class="fas fa-play"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-5 col-md-12">
-                                                <div class="property-title-box">
-                                                    <h4><a href="single-listing-one.html">Luxury Condo in Mariwood</a></h4>
-                                                    <div class="property-location">
-                                                        <i class="fa fa-map-marker-alt"></i>
-                                                        <p>164 Mariwood Rd , Campbell River, BC</p>
-                                                    </div>
-                                                    <ul class="property-feature">
-                                                        <li> <i class="fas fa-bed"></i>
-                                                            <span>6 Bedrooms</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-bath"></i>
-                                                            <span>5 Bath</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-arrows-alt"></i>
-                                                            <span>2400 sq ft</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-car"></i>
-                                                            <span>2 Garage</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="trending-bottom">
-                                                        <div class="trend-left float-left">
-                                                            <p class="list-date"><i class="lnr lnr-calendar-full"></i>5 days ago</p>
+                                            
+                                            <div class="col-xl-9 col-lg-9 col-md-12">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="property-title-box p-5 start-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
-                                                        <div class="trend-right float-right">
-                                                            <ul class="product-rating">
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                            </ul>
+                                                        <h4>10:25 AM</h4>
+                                                        <small class="text-primary text-capitalize">Depature time</small>
+                                                       
+                                                    </div>
+
+                                                    <div class="d-flex flex-column align-items-center justify-content-center text-center journey-line position-relative flex-grow-1">
+                                                        <span class="lnr lnr-history"></span>
+                                                      <span class="fw-bold text-black pt-3">1h 15m Non Stop</span>
+                                                    </div>
+    
+                                                    <div class="property-title-box p-5 arrive-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
+                                                        <h4>12:45 PM</h4>
+                                                        <small class="text-primary text-capitalize">Arrival Time</small>
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -1407,71 +1404,128 @@
                                                 <div class="row list-extra">
                                                     <div class="col-md-12 col-7 sm-left">
                                                         <div class="trend-open">
-                                                            <p><span class="per_sale">starts from</span>$75000</p>
+                                                            <p><span class=""></span>TSH 25,000</p>
+                                                            
                                                         </div>
+                                                        <p><span class=" text-capitalize text-right pb-3 ">34 Available Slots</span></p>
+
+                                                        <button class="btn v7" data-toggle="modal" data-target="#payment-pop">Book Train</button>
+
                                                     </div>
-                                                    <div class="col-md-12 col-5">
-                                                        <a href="single-listing-one.html" class="btn v7">Take a tour</a>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex justify-content-between align-items-center mx-5 pb-4 pt-4 mt-2 toogle-btn-cont">
+                                                    <h4 class="pb-0 text-primary d-flex align-items-center mb-0 trip-details-btn mouse-pointer">
+                                                        <i class="lnr lnr-chevron-down mr-3 rotate-180"></i>
+                                                        <span>Trip Details</span>
+                                                    </h4>
+                                                    <p>Price per person (incl. taxes & fees)</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 d-none trip-details-cont">
+                                                <div class="px-5 pb-5 border-top pt-0">
+                                                    <div class=" trip-details-cont">
+                                                        <div class="trip-details-header">
+                                                            <h4>Depart • Thus, 12 Jun 2024 At <span class="text-primary">10:45 AM</span></h4>
+                                                            <h4 class="text-right">1h 30m Trip</h4>
+                                                        </div>
+                                                        <div class="trip-details-body">
+                                                            
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Economy Class Rates</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>4 Adults (18+ Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 45000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>1 Child (4-17 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 2000</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>0 Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 0.00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Trip Details</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>Trip Time</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">1h 30 Min</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Stops</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">0 Stops (0 Hrs)</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">KES 0.00 Per Trip</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="single-property-box">
+
+                                    <div class="single-property-box bg-white">
                                         <div class="row">
-                                            <div class="col-xl-5 col-lg-4 col-md-12">
-                                               <div class="property-item">
-                                                    <a class="property-img" href="single-listing-two.html"><img src="images/property/property_7.jpg" alt="#"> </a>
-                                                    <ul class="feature_text">
-                                                        <li class="feature_cb"><span> Featured</span></li>
-                                                        <li class="feature_or"><span>For Rent</span></li>
-                                                    </ul>
-                                                    <div class="property-author-wrap">
-                                                        <a href="#" class="property-author">
-                                                            <img src="images/agents/agency_1.jpg" alt="...">
-                                                            <span>Carmen Properties</span>
-                                                        </a>
-                                                        <ul class="save-btn">
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-5 col-md-12">
-                                               <div class="property-title-box">
-                                                    <h4><a href="single-listing-one.html">Villa on Sunbury</a></h4>
-                                                    <div class="property-location">
-                                                        <i class="fa fa-map-marker-alt"></i>
-                                                        <p>39 Casey Ave, Sunbury, VIC 3429</p>
-                                                    </div>
-                                                    <ul class="property-feature">
-                                                        <li> <i class="fas fa-bed"></i>
-                                                            <span>5 Bedrooms</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-bath"></i>
-                                                            <span>4 Bath</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-arrows-alt"></i>
-                                                            <span>2048 sq ft</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-car"></i>
-                                                            <span>2 Garage</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="trending-bottom">
-                                                        <div class="trend-left float-left">
-                                                            <p class="list-date"><i class="lnr lnr-calendar-full"></i>1 week ago</p>
+                                            
+                                            <div class="col-xl-9 col-lg-9 col-md-12">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="property-title-box p-5 start-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
-                                                        <div class="trend-right float-right">
-                                                            <ul class="product-rating">
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                            </ul>
+                                                        <h4>10:25 AM</h4>
+                                                        <small class="text-primary text-capitalize">Depature time</small>
+                                                       
+                                                    </div>
+
+                                                    <div class="d-flex flex-column align-items-center justify-content-center text-center journey-line position-relative flex-grow-1">
+                                                        <span class="lnr lnr-history"></span>
+                                                      <span class="fw-bold text-black pt-3">1h 15m Non Stop</span>
+                                                    </div>
+    
+                                                    <div class="property-title-box p-5 arrive-cont">
+                                                        <div class="property-location">
+                                                            <p>Thus, 12 Jun 2024</p>
                                                         </div>
+                                                        <h4>12:45 PM</h4>
+                                                        <small class="text-primary text-capitalize">Arrival Time</small>
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -1479,98 +1533,102 @@
                                                 <div class="row list-extra">
                                                     <div class="col-md-12 col-7 sm-left">
                                                         <div class="trend-open">
-                                                            <p>$9200<span class="per_month">month</span></p>
+                                                            <p><span class=""></span>TSH 25,000</p>
+                                                            
                                                         </div>
+                                                        <p><span class=" text-capitalize text-right pb-3 ">34 Available Slots</span></p>
+
+                                                        <button class="btn v7" data-toggle="modal" data-target="#payment-pop">Book Train</button>
+
                                                     </div>
-                                                    <div class="col-md-12 col-5">
-                                                        <a href="single-listing-one.html" class="btn v7">Take a tour</a>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex justify-content-between align-items-center mx-5 pb-4 pt-4 mt-2 toogle-btn-cont">
+                                                    <h4 class="pb-0 text-primary d-flex align-items-center mb-0 trip-details-btn mouse-pointer">
+                                                        <i class="lnr lnr-chevron-down mr-3 rotate-180"></i>
+                                                        <span>Trip Details</span>
+                                                    </h4>
+                                                    <p>Price per person (incl. taxes & fees)</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 d-none trip-details-cont">
+                                                <div class="px-5 pb-5 border-top pt-0">
+                                                    <div class=" trip-details-cont">
+                                                        <div class="trip-details-header">
+                                                            <h4>Depart • Thus, 12 Jun 2024 At <span class="text-primary">10:45 AM</span></h4>
+                                                            <h4 class="text-right">1h 30m Trip</h4>
+                                                        </div>
+                                                        <div class="trip-details-body">
+                                                            
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Economy Class Rates</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>4 Adults (18+ Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 45000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>1 Child (4-17 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 2000</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>0 Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">TSH 0.00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                    <p>Trip Details</p>
+                                                                    <table class="table mt-3 table-sm">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>Trip Time</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">1h 30 Min</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Stops</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">0 Stops (0 Hrs)</td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th>Children (0-3 Years)</th>
+                                                                                <td>
+                                                                                    <hr>
+                                                                                </td>
+                                                                                <td class="text-right">KES 0.00 Per Trip</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="single-property-box">
-                                        <div class="row">
-                                            <div class="col-xl-5 col-lg-4 col-md-12">
-                                                 <div class="property-item">
-                                                    <a class="property-img" href="single-listing-two.html"><img src="images/property/property_8.jpg" alt="#"> </a>
-                                                    <ul class="feature_text">
-                                                        <li class="feature_cb"><span> Featured</span></li>
-                                                        <li class="feature_or"><span>For Rent</span></li>
-                                                    </ul>
-                                                    <div class="property-author-wrap">
-                                                        <a href="#" class="property-author">
-                                                            <img src="images/agents/agent_min_1.jpg" alt="...">
-                                                            <span>Tony Stark</span>
-                                                        </a>
-                                                        <ul class="save-btn">
-                                                            <li data-toggle="tooltip" data-placement="top" title="Photos"><a href=".html" class="btn-gallery"><i class="lnr lnr-camera"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark"><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                                                            <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Compare"><a href="#"><i class="fas fa-arrows-alt-h"></i></a></li>
-                                                        </ul>
-                                                        <div class="hidden photo-gallery">
-                                                            <a href="images/single-listing/property_view_1.jpg"></a>
-                                                            <a href="images/single-listing/property_view_2.jpg"></a>
-                                                            <a href="images/single-listing/property_view_3.jpg"></a>
-                                                            <a href="images/single-listing/property_view_4.jpg"></a>
-                                                            <a href="images/single-listing/property_view_5.jpg"></a>
-                                                            <a href="images/single-listing/property_view_6.jpg"></a>
-                                                            <a href="images/single-listing/property_view_7.jpg"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-5 col-md-12">
-                                                <div class="property-title-box">
-                                                    <h4><a href="single-listing-one.html">Comfortable Family Apartment</a></h4>
-                                                    <div class="property-location">
-                                                        <i class="fa fa-map-marker-alt"></i>
-                                                        <p>4210 Khale Street, Florence, USA</p>
-                                                    </div>
-                                                    <ul class="property-feature">
-                                                        <li> <i class="fas fa-bed"></i>
-                                                            <span>2 Bedrooms</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-bath"></i>
-                                                            <span>2 Bath</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-arrows-alt"></i>
-                                                            <span>1500 sq ft</span>
-                                                        </li>
-                                                        <li> <i class="fas fa-car"></i>
-                                                            <span>1 Garage</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="trending-bottom">
-                                                        <div class="trend-left float-left">
-                                                            <p class="list-date"><i class="lnr lnr-calendar-full"></i>1 week ago</p>
-                                                        </div>
-                                                        <div class="trend-right float-right">
-                                                            <ul class="product-rating">
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                                <li><i class="fas fa-star-half-alt"></i></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-12">
-                                                <div class="row list-extra">
-                                                    <div class="col-md-12 col-7 sm-left">
-                                                        <div class="trend-open">
-                                                            <p>$7500<span class="per_month">month</span></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12 col-5">
-                                                        <a href="single-listing-one.html" class="btn v7">Take a tour</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
                                 <!--pagination starts-->
                                 <div class="post-nav nav-res pt-50  ">
@@ -1821,6 +1879,42 @@
         </div>
     </div>
     <!--login Modal ends-->
+    <div class="modal fade" id="payment-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Bookig and Payment</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>
+                                <h6 class="mb-0">Enter Phone Number To pay with</h6>
+                            </label>
+                            <div class="">
+                                <input type="text" name="place-event"  class="form-control" placeholder="Phone Number" spellcheck="false" data-ms-editor="true">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+             </div>
+            </div>
+            <div class="modal-footer">
+              
+              <button type="button" class="btn btn-primary w-100">Send Request</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- payment modal open -->
+    <!-- payment modal close -->
+
     <!--Scripts starts-->
     <!--plugin js-->
     <script src="js/plugin.js"></script>

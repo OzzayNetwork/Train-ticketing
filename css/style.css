@@ -14729,7 +14729,7 @@ transition: .6s;
     background: #f7f7f7 !important;
 }
 
-.hero__form.v2.filter.listing-filter
+.flight-seracher
 {
     border: 1px solid #dddddd;
     margin-top: 60px;
@@ -14782,7 +14782,7 @@ transition: .6s;
     padding-top: 60px !important;
 }
 .trip-details-cont{
-    border: 1px solid #dddddd;
+    /* border: 1px solid #dddddd; */
 }
 
 .trip-details-header{
@@ -14816,4 +14816,34 @@ transition: .6s;
 .trip-details-body table hr{
     width: 168px;
     border: 1px dashed #dddddd;
+}
+.toogle-btn-cont h4{
+    font-weight: 500;
+    font-size: 16px;
+}
+.toogle-btn-cont{
+    border-top: 2px dashed #dddddd;
+}
+.mouse-pointer{
+    cursor: pointer !important;
+}
+.site-navbar .site-navigation .site-menu{
+    display: none !important;
+}
+.add-list.float-right.ml-3{
+    display: none;
+}
+.site-navbar-wrap{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.bg-h{
+    height: 285px;
+}
+.menu-btn{
+    display: none !important;
+}
+.footer-wrapper{
+    display: none !important;
 }
