@@ -771,6 +771,23 @@
        $(this).parent().parent().siblings('.trip-details-cont').toggleClass('d-none')
     })
 
+    $('.payment-btn').on('click', function(){
+        $(this).parent().addClass('d-none')
+        $('.details-body').addClass('d-none')
+        $('.loader-body').removeClass('d-none')
+        $('.receipt-header').addClass('d-none')
+
+        setTimeout(function() { 
+            $('.loader-body').addClass('d-none')
+            $('.receipt-modal').removeClass('d-none')
+            $('.receipt-header').removeClass('d-none')
+         }, 2000)
+    })
+
+    $('.print-receipt-btn').on('click', function(){
+      location.reload()
+    })
+
     // end of details
     /*---------------------------------
                Bootstrap select

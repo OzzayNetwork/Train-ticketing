@@ -1882,16 +1882,87 @@
     <div class="modal fade" id="payment-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header receipt-header">
               <h5 class="modal-title" id="exampleModalLongTitle">Bookig and Payment</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body details-body">
              <div class="container">
                 <div class="row">
                     <div class="col-12">
+                        <div class="row">
+
+                            <div class="col-12">
+                                <div class="alert alert-primary mb-0" role="alert">
+                                    Train Class Category <a href="#" class="alert-link">First Normal</a>
+                                  </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="trip-details-body px-0">
+
+                                    <table class="table mt-3 table-sm">
+                                        <tbody>
+                                            <tr>
+                                                <th>Adults (X2)</th>
+                                                <td>
+                                                    <hr>
+                                                </td>
+                                                <td class="text-right">TSH 45000</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Children 3-17 Yrs  (X2)</th>
+                                                <td>
+                                                    <hr>
+                                                </td>
+                                                <td class="text-right">TSH 2000</td>
+                                            </tr>
+        
+                                            <tr>
+                                                <th>Children 0-3 Years (X0)</th>
+                                                <td>
+                                                    <hr>
+                                                </td>
+                                                <td class="text-right">TSH 0.00</td>
+                                            </tr>
+
+                                            <tr class="table-dark">
+                                                <th class="text-uppercase pl-2">Sub Total</th>
+                                                <td>
+                                                    <hr>
+                                                </td>
+                                                <td class="text-right pr-2 text-white">TSH 47,000</td>
+                                            </tr>
+                                        </tbody>
+                                        
+                                    </table>
+
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <h6 class="mb-0">Your Full names</h6>
+                            </label>
+                            <div class="">
+                                <input type="text" name="place-event"  class="form-control" placeholder="Full Names" spellcheck="false" data-ms-editor="true">
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <h6 class="mb-0">Your ID Number</h6>
+                            </label>
+                            <div class="">
+                                <input type="text" name="place-event"  class="form-control" placeholder="ID Number" spellcheck="false" data-ms-editor="true">
+                            </div>
+                            
+                        </div>
+
                         <div class="form-group">
                             <label>
                                 <h6 class="mb-0">Enter Phone Number To pay with</h6>
@@ -1905,9 +1976,40 @@
                 </div>
              </div>
             </div>
+
+            <div class="modal-body loader-body d-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-center d-flex flex-column align-items-center">
+                                <div class="loader-cont pb-3">
+                                    <div class="lds-ripple"><div></div><div></div></div>
+                                </div>
+                                <h4>Processing Payment</h4>
+                                <p class="text-muted mt-2"> Remember to AAsk the Client to <strong class="text-black">Check their phone</strong> to confirm payment by entering their Mpesa pin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body receipt-modal d-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-center d-flex flex-column align-items-center pb-5">
+                                
+                                <h4>Payment Processed</h4>
+                                <p class="text-muted mt-2"> The Payement went through, click the button below to print the receipt</p>
+                                <a href="PrintDocs/Receipt/slip33.html" class="btn btn-success mb-5 print-receipt-btn" target="_blank">Print Receipt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="modal-footer">
               
-              <button type="button" class="btn btn-primary w-100">Send Request</button>
+              <button type="button" class="btn btn-primary w-100 payment-btn">Send Request of TSH 47000</button>
             </div>
           </div>
         </div>
