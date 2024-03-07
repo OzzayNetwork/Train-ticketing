@@ -14895,3 +14895,7 @@ transition: .6s;
       opacity: 0;
     }
   }
+
+  .navbar-brand img{
+    height: 55px;
+  }
