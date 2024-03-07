@@ -253,15 +253,30 @@
                     </div>
                     <div class="col-md-12 p-0 bg-white">
 
+                        <ul class="nav nav-tabs hero_list rideTypeNav w-100 bg-light">
+                            <li class="nav-item active d-flex align-items-center">
+                                <a data-toggle="tab" href="#all_property" class="d-flex align-items-center"><i class="lnr lnr-calendar-full pr-2"></i> Trip Scheduling</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a data-toggle="tab" href="#for_sale" class="d-flex align-items-center"><i class="lnr lnr-download pr-2"></i> Check In</a>
+                            </li>
+                            <li class="nav-item d-none">
+                                <a data-toggle="tab" href="#for_rent"><i class="lnr lnr-clock"></i> Ride scheduling</a>
+                            </li>
+                            <li class="nav-item d-none">
+                                <a data-toggle="tab" href="#for_rent"><i class="lnr lnr-hourglass"></i> Post Pay</a>
+                            </li>
+                        </ul>
+
                         <form class="hero__form v2 filter listing-filter bg-cb bg-white p-0" action="map-page.html">
                             <div class="row m-0">
 
                                 <div class="col-sm-12 col-md-6 p-5 rideType">
 
-                                    <div class="row d-flex animated zoomIn">
+                                    <div class="row animated zoomIn">
                                         <div class="col-12">
-                                            <small>Want a ride on a different date!</small>
-                                            <h6>Share your details here?</h6>
+                                            <small>Key in Your details Below</small>
+                                            <h6>Schedule For A trip</h6>
                                         </div>
 
                                         <div class="col-xl-6 col-lg-6 col-sm-12">
@@ -374,14 +389,50 @@
                                         </div>
                                     </div>
 
+                                    <div class="row d-none animated zoomIn">
+                                        <div class="col-12">
+                                            <small>Get Your Boarding Pass</small>
+                                            <h6>Check In Now</h6>
+                                        </div>
+                                    
+                                        <div class="col-xl-12 col-lg-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>
+                                                    <h6 class="mb-0">Receipt Number</h6>
+                                                </label>
+                                                <div class="">
+                                                    <input type="text" name="place-event" id="place-event" placeholder="Enter Your Receipt Number">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-12 col-lg-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>
+                                                    <h6 class="mb-0">Full names</h6>
+                                                </label>
+                                                <div class="">
+                                                    <input type="text" name="place-event" id="place-event" placeholder="Enter your Full Names">
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+    
+                                        <div class="col-12 pt-4">
+                                            <button class="btn btn-primary d-none">Submit Request</button>
+                                            <button class="btn v3 text-center w-100" data-toggle="modal" data-target="#boarding-pop" type="button"><i class="lnr lnr-pushpin"></i>Continue</button>
+                                        </div>
+                                    </div>
+    
+
                                 </div>
 
                                 <div class="col-sm-12 col-md-6 px-0 mapPlace">
 
                                     <div class="map-container nowRide animated fadeIn">
                                         <div class="p-5 text-right position-relative z-index-1 d-none">
-                                            <h5 class="text-right p-0 m-0">Order a taxi Now!</h5>
-                                            <small>Do it at ease</small>
+                                            <h5 class="text-right p-0 m-0">Get Your Boarding Pass</h5>
+                                            <small>Checkin</small>
                                             <hr class="w-100">
                                         </div>
                                         <div class="main-map-container d-none" id="map"></div>
@@ -389,8 +440,8 @@
 
                                     <div class="map-container d-none dateRide animated fadeIn">
                                         <div class="p-5 text-right position-relative z-index-1">
-                                            <h5 class="text-right p-0 m-0">Set a pickup date</h5>
-                                            <small>Date booking</small>
+                                            <h5 class="text-right p-0 m-0 d-none">Set a pickup date</h5>
+                                            <small class="d-none">Date booking</small>
                                             <hr class="w-100">
                                         </div>
                                         <div class="main-map-container d-none" id="mapDateBooking"></div>
@@ -941,6 +992,97 @@
         </div>
     </div>
     <!--login Modal ends-->
+
+    <!-- bording modal -->
+    <div class="modal fade" id="boarding-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header receipt-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Checking In</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+           <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 pb-5 text-black">
+                            <div style="display: flex; flex-flow: column; margin-top: 20px; font-size: 13px; padding:20px; background-color: rgb(225 223 221 / 53%);">
+                                <span style="margin-bottom:7px"><strong>Expected Time of Depature</strong></span>
+                                <span style="margin-bottom: 15px;">12:45 AM From Mpiji</span>
+                    
+                                <span style="margin-bottom:7px"><strong>Expected Time of Arrival</strong></span>
+                                <span style="margin-bottom: 0px;">1:45 PM At Soga</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="pb-5">
+                                <img src="images/train-images.png" alt="" class="img">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <table class="table table-sm table-striped">
+                                <thead>
+                                    <tr class="table-dark">
+                                        <th>#</th>
+                                        <th>Full Names</th>
+                                        <th>ID NO/PPT No.</th>
+                                        <th>Locomotive</th>
+                                        <th>
+                                            Seat Number
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>
+                                            <input type="text" class="form-control" placeholder="Full Names" >
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" placeholder="ID Number" >
+                                        </td>
+
+                                        <td>
+                                            <select class="hero__form-input form-control custom-select  w-100"title="Select Locomotive Number">
+                                                <option value="1">Room A (12 Seats)</option>
+                                                <option value="2">Room B (56 Seats)</option>
+                                                <option value="3">Room 3 (21 Seats)</option>
+                                                
+                                            </select>
+                                        </td>
+
+                                        <td>
+                                            <select class="hero__form-input form-control custom-select  w-100"title="Select Locomotive Number">
+                                                <option value="1">Seat 12</option>
+                                                <option value="2">Seat 13</option>
+                                                <option value="3">Seat 14</option>
+                                                
+                                            </select>
+                                        </td>
+                                    </tr>
+
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+           </div>
+            <div class="modal-footer">
+              
+              <a href="PrintDocs/Boading/BoardingPass.html" target="_blank" type="button" class="btn btn-primary w-100">Get Pass</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- end of boarding modal -->
+
+
     <!--Scripts starts-->
     <!--plugin js-->
     <script src="js/plugin.js"></script>
