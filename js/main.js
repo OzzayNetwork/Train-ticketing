@@ -788,6 +788,22 @@
       location.reload()
     })
 
+    $('.payment-method').on('change', function(){
+        var theVal=$(this).val()
+
+       
+        if(theVal==4){
+            $('.card-payment').removeClass('d-none')
+            $('.phone-num').addClass('d-none')
+        }
+
+        if(theVal!=4){
+            $('.card-payment').addClass('d-none')
+            $('.phone-num').removeClass('d-none')
+        }
+        
+    })
+
     // end of details
     /*---------------------------------
                Bootstrap select

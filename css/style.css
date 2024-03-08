@@ -14935,3 +14935,7 @@ transition: .6s;
   .z-index-1{
     z-index: 1 !important;
   }
+  .card-payment{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
