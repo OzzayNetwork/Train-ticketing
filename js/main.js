@@ -777,6 +777,12 @@
         $('.loader-body').removeClass('d-none')
         $('.receipt-header').addClass('d-none')
 
+        //$('.stk-link').click()
+
+        var url = $(".stk-link").attr("href");
+
+        window.open(url, "_blank");
+
         setTimeout(function() { 
             $('.loader-body').addClass('d-none')
             $('.receipt-modal').removeClass('d-none')
